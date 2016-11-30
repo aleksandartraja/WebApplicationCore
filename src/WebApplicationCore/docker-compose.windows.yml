@@ -1,0 +1,13 @@
+version: '2'
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile.windows
+    ports:
+      - "5000:5000"
+
+networks:
+  default:
+    external:
+      name: nat

@@ -1,0 +1,10 @@
+version: '2'
+
+services:
+  webapplicationcore:
+    image: user/webapplicationcore${TAG}
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "80"
